@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.17)
 project(caesar)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(caesar main.cpp
-        caesar.cpp)
+add_library(caesar SHARED caesar.cpp)
